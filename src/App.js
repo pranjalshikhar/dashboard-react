@@ -1,17 +1,17 @@
-import { Dashboard } from "@mui/icons-material";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
 import Bar from "./scenes/bar/Bar";
 import Calendar from "./scenes/calendar/Calendar";
 import Contacts from "./scenes/contacts/Contacts";
+import Dashboard from "./scenes/dashboard/Dashboard";
 import FAQ from "./scenes/faq/FAQ";
 import Form from "./scenes/form/Form";
 import Geography from "./scenes/geography/Geography";
+import SideBar from "./scenes/global/SideBar";
 import TopBar from "./scenes/global/TopBar";
 import Invoices from "./scenes/invoices/Invoices";
 import Line from "./scenes/line/Line";
 import Pie from "./scenes/pie/Pie";
-import SideBar from "./scenes/global/SideBar";
 import Team from "./scenes/team/Team";
 import { ColorModeContext, useColorMode } from "./themes";
 
@@ -26,6 +26,7 @@ function App() {
           <main className="content">
             <TopBar />
             <Routes>
+              {/* <Route path="/" element={<Dashboard />} /> */}
               <Route path="/" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
               <Route path="/contacts" element={<Contacts />} />

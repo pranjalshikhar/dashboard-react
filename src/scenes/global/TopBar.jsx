@@ -27,23 +27,26 @@ const TopBar = () => {
           <SearchIcon />
         </IconButton>
       </Box>
+
       {/* icons */}
-      <IconButton onClick={colorMode.toggleColorMode}>
-        {theme.palette.mode === "dark" ? (
-          <DarkModeOutlinedIcon />
-        ) : (
-          <LightModeOutlinedIcon />
-        )}
-      </IconButton>
-      <IconButton>
-        <NotificationsOutlinedIcon />
-      </IconButton>
-      <IconButton>
-        <SettingsOutlinedIcon />
-      </IconButton>
-      <IconButton>
-        <PersonOutlinedIcon />
-      </IconButton>
+      <Box display="flex">
+        <IconButton onClick={colorMode.toggleColorMode}>
+          {theme.palette.mode === "dark" ? (
+            <DarkModeOutlinedIcon />
+          ) : (
+            <LightModeOutlinedIcon />
+          )}
+        </IconButton>
+        <IconButton>
+          <NotificationsOutlinedIcon />
+        </IconButton>
+        <IconButton>
+          <SettingsOutlinedIcon />
+        </IconButton>
+        <IconButton>
+          <PersonOutlinedIcon />
+        </IconButton>
+      </Box>
     </Box>
   );
 };
