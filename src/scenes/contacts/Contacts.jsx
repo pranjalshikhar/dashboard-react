@@ -81,15 +81,13 @@ const Contacts = () => {
             borderTop: "none",
             backgroundColor: colors.blueAccent[700],
           },
-          "& .MuiCheckbox-root": {
-            color: `${colors.greenAccent[200]} !important`,
-          },
           "& .MuiDataGrid-toolbarContainer .MuiButton-text": {
             color: `${colors.grey[100]} !important`,
           },
         }}
       >
         <DataGrid
+          checkboxSelection
           rows={mockDataContacts}
           columns={columns}
           components={{ Toolbar: GridToolbar }}
