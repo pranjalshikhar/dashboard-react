@@ -96,7 +96,7 @@ const SideBar = () => {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`./luffy.jpg`}
+                  src={`../../assets/luffy.jpg`}
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
               </Box>
