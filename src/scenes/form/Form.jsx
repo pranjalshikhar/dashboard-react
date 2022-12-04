@@ -1,9 +1,8 @@
-import { Box, Button, TextField, useTheme } from "@mui/material";
+import { Box, Button, TextField } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { Formik } from "formik";
 import * as yup from "yup";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import Header from "../../components/Header";
-import { tokens } from "../../themes";
 
 const initialValues = {
   firstName: "",
@@ -34,8 +33,6 @@ const userSchema = yup.object().shape({
 });
 
 const Form = () => {
-  // const theme = useTheme();
-  // const colors = tokens(theme.palette.mode);
   const isNonMobile = useMediaQuery("(min-width:600px)");
 
   const handleFormSubmit = (values) => {
